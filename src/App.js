@@ -27,7 +27,7 @@ function App() {
           <h2 style={{color: '#444', padding: 20, fontWeight: 300}}>Random Quote Generator</h2>
           <p id="text" style={{color: '#777', paddingRight: 20, paddingLeft: 20}}><img src={require('./quotes.png')} alt='tumblr' style={{height: 35, padding: 8, opacity: 0.4}}/>
           {quote && quote.quote}</p>
-          <p id="author" style={{textAlign: 'right', color: '#777', paddingRight: 25, paddingBottom: 15}}>- {quote && quote.author}</p>
+          <p id="author" style={{textAlign: 'right', color: '#777', paddingRight: 25, paddingBottom: 15}}>-{quote && quote.author}</p>
           <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingRight: 20, paddingLeft: 20}}>
           <div style={{display: 'flex',justifyContent: 'flex-start'}}>
           <a id="tweet-quote" target="_blank" rel="noreferrer" href={`https://twitter.com/intent/tweet?text=${quote.quote + " -" + quote.author}`}><TwitterIcon sx={{ fontSize: 40, color: '#000', opacity: 0.4 }}  /></a>
