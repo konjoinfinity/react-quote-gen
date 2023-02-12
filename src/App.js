@@ -16,7 +16,6 @@ function App() {
 
   const getNewQuote = () => {
     var newQuote = quotes[Math.floor(Math.random()*quotes.length)];
-    console.log(newQuote)
     setQuote(newQuote)
   }
 
